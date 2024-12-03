@@ -1,0 +1,165 @@
+/* Calculator - Project - HTML - CSS - JS - AHCreativeCode */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;    
+}
+
+.calout {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.calculator {
+    height: 505px;
+    width: 315px;
+    border: 3px solid #ff6962;
+    background-color: white;
+    border-radius: 12px;
+    margin: auto;
+    padding: 10px 0px;
+    transition: 0.3s ease-in-out;
+}
+
+.calculator:hover {
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.6);
+    transform: scale(1.02);
+}
+
+.input {
+    height: 60px;
+    width: 90%;
+    border-radius: 12px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 28px;
+    font-weight: 600;
+    border: 2px solid #ececec;
+}
+
+.temp {
+    height: 20px;
+    width: 90%;
+    border-radius: 40px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #a9fde9;
+    color: rgb(37, 37, 37);
+}
+
+button {
+    font-size: 26px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+    margin: 8px 8px;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+.btnset {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnset button {
+    background-color: #ff6962;
+    font-weight: 500;
+    color: white;
+    font-size: 28px;
+}
+
+
+.btnset2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnset2 button {
+    font-size: 24px;
+}
+
+.btnset2 button:hover {
+    background-color: #f0f2f5;
+    border-color: #ddfff7;
+}
+
+.b4 .nth {
+    background-color: #f0f2f5;
+    font-size: 18px;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer .ebtn {
+    font-size: 28px;
+    height: 195px;
+    width: 60px;
+    border-radius: 40px;
+    background-color: #ffd95c;
+}
+
+.answer .ebtn:hover {
+    background-color: #ffd95c;
+}
+
+.answer .dbtn {
+    background-color: #f0f2f5;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 480px){
+    .calculator {
+        height: 490px;
+        width: 300px;
+    }
+    button {
+        font-size: 24px;
+        height: 50px;
+        width: 50px;
+    }
+    .btnset button {
+        font-size: 24px;
+    }
+    .answer .ebtn {
+        font-size: 24px;
+        height: 185px;
+    }
+    .calculator:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    button:hover {
+        transform: none;
+    }
+}
